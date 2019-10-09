@@ -1,11 +1,12 @@
 import React, { useReducer } from 'react';
+import uuid from 'uuid';
 
 const MARK = 'MARK';
 
 const initialState = [
-  { id: '1', name: "sweeping", completed: false },
-  { id: '2', name: "mopping", completed: false },
-  { id: '3', name: "washing dishes", completed: false },
+  { id: uuid(), name: "sweeping", completed: false },
+  { id: uuid(), name: "mopping", completed: false },
+  { id: uuid(), name: "washing dishes", completed: false },
 ];
 
 function reducer(state, action) {
