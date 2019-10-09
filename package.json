@@ -5,8 +5,7 @@
   "scripts": {
     "server": "live-server",
     "webpack": "webpack --watch",
-    "test": "jest --watchAll",
-    "api": "node server.js"
+    "test": "jest --watchAll --verbose"
   },
   "keywords": [],
   "author": "",

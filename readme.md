@@ -1,4 +1,4 @@
-# The Reducer Pattern
+# Intro to Redux
 
 ## How to Run this App
   * Clone repository and cd into the project folder.
