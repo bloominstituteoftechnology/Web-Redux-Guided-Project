@@ -1,5 +1,5 @@
 {
-  "name": "reducer-pattern",
+  "name": "intro-to-redux",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
