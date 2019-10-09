@@ -1,7 +1,6 @@
 import React, { useReducer } from 'react';
 import uuid from 'uuid';
 
-const ADD_TO_CART = 'ADD_TO_CART';
 
 const initialState = {
   cart: [],
@@ -10,6 +9,8 @@ const initialState = {
     meats: ['beef', 'chicken', 'fish'],
   },
 };
+
+const ADD_TO_CART = 'ADD_TO_CART';
 
 function reducer(state, action) {
   switch (action.type) {
