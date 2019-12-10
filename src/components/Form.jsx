@@ -17,7 +17,7 @@ export default function Form() {
   };
   return (
     <form className='component' onSubmit={onFormSubmit}>
-      <label>first namez
+      <label>first name
         <input value={formValues.fname} onChange={onValueChange} name='fname' />
       </label><br />
 
