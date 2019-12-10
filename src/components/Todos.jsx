@@ -14,6 +14,7 @@ export default function Todos() {
       return { id: todo.id, name: todo.name, completed: isComplete };
     }));
   };
+
   return (
     <div className='component'>
       {
