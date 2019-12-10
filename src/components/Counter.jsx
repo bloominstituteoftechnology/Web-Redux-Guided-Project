@@ -10,7 +10,7 @@ export default function Counter() {
     <div className='component'>
       The count is {count}
       <button onClick={increment}>inc</button>
-      <button onClick={decrement}>dev</button>
+      <button onClick={decrement}>dec</button>
       <button onClick={reset}>reset</button>
     </div>
   );
