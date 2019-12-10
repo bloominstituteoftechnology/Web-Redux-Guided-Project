@@ -13,8 +13,12 @@ export default function Form() {
   };
   const onFormSubmit = event => {
     event.preventDefault();
-    alert(`submitting ${formValues.lname}, ${formValues.fname}`);
+    setFormValues({
+      fname: '',
+      lname: '',
+    });
   };
+
   return (
     <form className='component' onSubmit={onFormSubmit}>
       <label>first name
