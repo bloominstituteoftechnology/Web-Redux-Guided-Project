@@ -12,6 +12,16 @@ export function decrement() {
   };
 }
 
-// inputchange // needs args
+export function inputChange(name, value) {
+  return {
+    type: types.INPUT_CHANGE,
+    payload: {
+      name,
+      value,
+    },
+  };
+}
+
+
 // mark // needs args
 // submit

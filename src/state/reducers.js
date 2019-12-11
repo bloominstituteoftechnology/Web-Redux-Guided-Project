@@ -23,7 +23,10 @@ const initialForm = { fname: '', lname: '' };
 export function formReducer(form = initialForm, action) {
   switch (action.type) {
     case types.INPUT_CHANGE:
-      return { ...form, [action.payload.name]: action.payload.value };
+      return {
+        ...form,
+        [action.payload.name]: action.payload.value,
+      };
     case types.SUBMIT:
       return initialForm;
     default:
