@@ -6,6 +6,17 @@ import Form from './components/Form';
 
 import './App.less';
 
+// const state = {
+//   count: 0, // 1
+//   form: {   // 2
+//     fname: "",
+//     lname: "",
+//   },
+//   todos: [], // 3
+// }
+
+// HOW MANY SLICES ARE THERE HERE? 3
+
 ReactDOM.render(<>
   <Counter />
   <Form />
