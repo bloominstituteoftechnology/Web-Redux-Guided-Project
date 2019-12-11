@@ -20,7 +20,6 @@ export function Counter({ count, increment, decrement }) {
 function mapStateToProps(state) {
   return {
     count: state.count,
-    todos: state.todos,
   };
 }
 export default connect(
