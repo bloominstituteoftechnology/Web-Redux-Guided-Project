@@ -1,3 +1,5 @@
+import * as types from './actionTypes';
+
 // reducers here
 // WE HAVE SETTLED FOR 3 SLICES OF STATE
 // THIS MEANS 3 REDUCERS
