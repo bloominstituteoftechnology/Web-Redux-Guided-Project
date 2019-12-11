@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+// STEP 9 OF THE GENERAL STEPS (A)
+import { increment, decrement } from '../state/actionCreators';
 
 export function Counter({ count, increment, decrement }) {
   return (
@@ -11,4 +13,8 @@ export function Counter({ count, increment, decrement }) {
   );
 }
 
-export default connect()(Counter);
+// STEP 8 OF THE GENERAL STEPS
+export default connect(
+  state => state, // mapStateToProps
+  { increment, decrement }, // STEP 9 OF THE GENERAL STEPS (B)
+)(Counter);
