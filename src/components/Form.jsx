@@ -4,10 +4,14 @@ import { inputChange, submit } from '../state/actionCreators';
 
 export function Form({ form, inputChange, submit }) {
   const onValueChange = event => {
-
+    inputChange(
+      event.target.name,
+      event.target.value,
+    );
   };
   const onFormSubmit = event => {
-
+    event.preventDefault();
+    submit();
   };
 
   return (
