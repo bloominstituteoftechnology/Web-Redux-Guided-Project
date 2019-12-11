@@ -17,7 +17,13 @@ export function Counter({ count, increment, decrement }) {
 }
 
 // STEP 8 OF THE GENERAL STEPS
+function mapStateToProps(state) {
+  return {
+    count: state.count,
+    todos: state.todos,
+  };
+}
 export default connect(
-  state => state, // mapStateToProps
+  mapStateToProps, // injects props into Counter
   { increment, decrement }, // STEP 9 OF THE GENERAL STEPS (B)
 )(Counter);
