@@ -1,32 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function Form() {
-  const [formValues, setFormValues] = useState({
-    fname: '',
-    lname: '',
-  });
+export function Form({ fname, lname, inputChange, submit }) {
   const onValueChange = event => {
-    setFormValues({
-      ...formValues,
-      [event.target.name]: event.target.value,
-    });
+
   };
   const onFormSubmit = event => {
-    event.preventDefault();
-    setFormValues({
-      fname: '',
-      lname: '',
-    });
+
   };
 
   return (
     <form className='component' onSubmit={onFormSubmit}>
       <label>first name
-        <input value={formValues.fname} onChange={onValueChange} name='fname' />
+        <input value={fname} onChange={onValueChange} name='fname' />
       </label><br />
 
       <label>last name
-        <input value={formValues.lname} onChange={onValueChange} name='lname' />
+        <input value={lname} onChange={onValueChange} name='lname' />
       </label><br />
 
       <input type='submit' />
