@@ -1,5 +1,7 @@
 import * as types from './actionTypes';
 
+// STEP 3 OF THE GENERAL ALGORITHM
+
 // reducers here
 // WE HAVE SETTLED FOR 3 SLICES OF STATE
 // THIS MEANS 3 REDUCERS

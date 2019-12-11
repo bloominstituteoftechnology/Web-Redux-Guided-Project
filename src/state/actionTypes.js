@@ -1,4 +1,6 @@
 // action types here
+// STEP 2 OF ALGORITHM
+
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 export const INPUT_CHANGE = "INPUT_CHANGE";
