@@ -32,9 +32,11 @@ export function Form({ form, inputChange, submit }) {
 function mapStateToProps(state) {
   return {
     form: {
-      fname: state.fname,
-      lname: state.lname,
+      fname: state.form.fname.toUpperCase(),
+      lname: state.form.lname,
     },
+    fname: state.form.fname,
+    lname: state.form.lname,
   };
 }
 export default connect(
