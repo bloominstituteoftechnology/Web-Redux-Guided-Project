@@ -17,7 +17,10 @@ const monsterReducer = combineReducers({
 });
 
 // STEP 5 OF THE GENERAL STEPS
-const store = createStore(monsterReducer);
+const store = createStore(
+  monsterReducer,
+  // we need the second one to enable redux devtools
+);
 
 // STEP 6 OF THE GENERAL STEPS
 // wrap the app with the Provider from react-redux lib
