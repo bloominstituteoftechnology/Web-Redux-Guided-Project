@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-export default function Counter() {
-  const [count, setCount] = useState(0);
-  const increment = () => setCount(count => count + 1);
-  const decrement = () => setCount(count => count - 1);
-
+export function Counter({ count, increment, decrement }) {
   return (
     <div className='component'>
       The count is {count}
@@ -13,3 +10,5 @@ export default function Counter() {
     </div>
   );
 }
+
+export default connect()(Counter);
