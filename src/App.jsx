@@ -22,7 +22,7 @@ const monsterReducer = combineReducers({
 // STEP 5 OF THE GENERAL STEPS
 const store = createStore(
   monsterReducer,
-  // we need the second one to enable redux devtools
+  // we need the second arg to enable redux devtools
 );
 
 // STEP 6 OF THE GENERAL STEPS
