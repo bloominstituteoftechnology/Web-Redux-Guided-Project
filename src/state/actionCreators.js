@@ -12,6 +12,10 @@ export function decrement() {
   };
 }
 
+export function submit() {
+  return { type: types.SUBMIT };
+}
+
 export function inputChange(name, value) {
   return {
     type: types.INPUT_CHANGE,
@@ -22,6 +26,9 @@ export function inputChange(name, value) {
   };
 }
 
-
-// mark // needs args
-// submit
+export function markTodo(id, completed) {
+  return {
+    type: types.MARK_TODO,
+    payload: { id, completed },
+  };
+}
