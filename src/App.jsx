@@ -7,12 +7,14 @@ import Form from './components/Form';
 import './App.less';
 
 // const state = {
-//   count: 0, // 1
-//   form: {   // 2
+//   count: 2,
+//   countSquared: 4, // NOOO
+//   constants: [],   // NOOO
+//   form: {
 //     fname: "",
 //     lname: "",
 //   },
-//   todos: [], // 3
+//   todos: [],
 // }
 
 // HOW MANY SLICES ARE THERE HERE? 3
