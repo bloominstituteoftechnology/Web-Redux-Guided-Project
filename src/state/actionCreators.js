@@ -1,15 +1,14 @@
 import * as types from './actionTypes';
-// action creators here
-// STEP 7
+// STEP 7 OF THE GENERAL STEPS
 export function increment() {
   return {
-    type: types.INCREMENT, // we need our types!!!!
+    type: types.INCREMENT,
   };
 }
 
 export function decrement() {
   return {
-    type: types.DECREMENT, // we need our types!!!!
+    type: types.DECREMENT,
   };
 }
 

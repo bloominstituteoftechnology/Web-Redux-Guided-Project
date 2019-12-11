@@ -8,6 +8,9 @@ import Counter from './components/Counter';
 import Form from './components/Form';
 import './App.less';
 
+// STEP 1 OF THE GENERAL STEPS
+// this app needs a count, a form and a todos (slices of state)
+
 // STEP 4 OF THE GENERAL STEPS
 const monsterReducer = combineReducers({
   // what keys? One per slice, choosing pretty names
