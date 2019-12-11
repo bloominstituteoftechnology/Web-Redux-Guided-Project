@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 // STEP 9 OF THE GENERAL STEPS (A)
 import { increment, decrement } from '../state/actionCreators';
 
+// THESE PROPS ARE ACTUALLY INJECTED BY
+// OUR 1st arg of connect 'count' makes it in as a prop
+// OUR 2nd arg of connect 'increment' and 'decrement' make it in as props
 export function Counter({ count, increment, decrement }) {
   return (
     <div className='component'>
