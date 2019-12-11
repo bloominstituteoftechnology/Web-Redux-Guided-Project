@@ -23,6 +23,7 @@ const monsterReducer = combineReducers({
 const store = createStore(
   monsterReducer,
   // we need the second arg to enable redux devtools
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
 // STEP 6 OF THE GENERAL STEPS
